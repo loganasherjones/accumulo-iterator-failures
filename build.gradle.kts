@@ -36,7 +36,7 @@ repositories {
     mavenCentral()
 }
 
-val accumuloVersion = "1.9.3"
+val accumuloVersion = "1.10.2"
 val slf4jVersion = "1.7.36"
 val logbackVersion = "1.2.11"
 

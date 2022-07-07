@@ -12,7 +12,7 @@ fun <T> retryIO(
             return result
         }
         Thread.sleep(currentDelay)
-        currentDelay = (currentDelay * factor).toLong().coerceAtLeast(maxDelay)
+        currentDelay = (currentDelay * factor).toLong().coerceAtMost(maxDelay)
     }
     return block()
 }
